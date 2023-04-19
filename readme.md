@@ -1,20 +1,23 @@
-How to use this Project :
--> Simply open the project in Intellij/any Java IDE
--> Make sure you have SDK specified in project otherwise goto File->Project Structure and specify SDK.
--> Run the project or run the src/main java class
--> You should see bubble-sort being implemented in runtime.
+# 🚀 How to Use This Project
 
-Strategy Pattern Theory -
+Follow these simple steps to use this project:
 
-**The strategy pattern is a software design pattern that enables an algorithm's behaviour to be selected at runtime.**
+1. Open the project in Intellij or any Java IDE.
+2. Make sure you have specified the SDK in the project. If not, go to `File->Project Structure` and specify the SDK.
+3. Run the project or run the `src/main` Java class.
+4. You should see bubble-sort being implemented in runtime.
 
-Let’s say we have a class which performs some functionality.
+# 🧐 Strategy Pattern Theory
+
+The strategy pattern is a software design pattern that enables an algorithm's behavior to be selected at runtime.
+
+Let's say we have a class which performs some functionality.
 
 But this functionality may vary at runtime depending on certain factors.
 
 So instead of hardcoding a bunch of if-else statements in our class, we can use the Strategy pattern.
 
-So let’s say, we have a class called **Sorter**, but based on the size and contents of the array, we might perform a different implementation of sort.
+So let's say, we have a class called **Sorter**, but based on the size and contents of the array, we might perform a different implementation of sort.
 
 We have 3 ways of sorting - Bubble Sort, Merge Sort and Quick Sort and the client which will call the **Sorter** class, would definitely know about the nature of the array.
 
@@ -26,4 +29,4 @@ Now in our main **Sorter** class, we will have a **sortStrategy** member object 
 
 And finally the **Sorter** class will have a **sort()** method which will use the **sortStrategy** member object and perform - **sortStrategy.sort()**
 
-This will enable us to select the behaviour of sort at runtime which is the goal of the Strategy pattern.
+This will enable us to select the behavior of sort at runtime which is the goal of the Strategy pattern.
